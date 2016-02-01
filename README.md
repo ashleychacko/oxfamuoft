@@ -10,7 +10,7 @@ Welcome to Oxfam University of Toronto's website repo!
 4. Install Ruby 2.3.0: `rvm install 2.3.0`
 5. Set the default Ruby version: `rvm --default 2.3.0`
 6. Install Rails: `gem install rails --version 4.2.5 --no-ri --no-rdoc`
-7. Close this repo: `git clone https://github.com/gabrieltanchen/oxfamuoft.git`
+7. Clone this repo: `git clone https://github.com/gabrieltanchen/oxfamuoft.git`
 
 ## Usage
 
