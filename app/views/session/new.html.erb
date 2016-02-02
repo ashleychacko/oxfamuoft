@@ -1,0 +1,29 @@
+<div>
+  <% if flash[:alert] %>
+    <p id="notice"><%= flash[:alert] %></p>
+  <% end %>
+  <%= form_tag do %>
+    <fieldset>
+      <legend>Please Log In</legend>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Email
+            <%= text_field_tag :email, params[:email] %>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <label>Password
+            <%= password_field_tag :password, params[:password] %>
+          </label>
+        </div>
+      </div>
+      <div class="row">
+        <div class="large-12 columns">
+          <%= submit_tag "Login", :class=>"button small large-12" %>
+        </div>
+      </div>
+    </fieldset>
+  <% end %>
+</div>
