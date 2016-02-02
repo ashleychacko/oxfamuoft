@@ -1,4 +1,14 @@
 Rails.application.routes.draw do
+
+  get 'home/index'
+  root 'home#index', as: 'home'
+
+  controller :session do
+    get 'admin' => :new
+    post 'admin' => :create
+    delete 'logout' => :destroy
+  end
+
   resources :admins
   # The priority is based upon order of creation: first created -> highest priority.
   # See how all your routes lay out with "rake routes".
